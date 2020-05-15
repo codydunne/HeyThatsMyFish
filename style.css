@@ -1,0 +1,104 @@
+/* General formatting */
+body {
+	padding: 0 10px;
+	font: 18px/1.5 -apple-system, BlinkMacSystemFont, "avenir next",avenir, "Segoe UI", "lucida grande", "helvetica neue", helvetica, "Fira Sans",roboto, noto, "Droid Sans", cantarell, oxygen, ubuntu, "franklin gothic medium", "century gothic", "Liberation Sans",
+	sans-serif;
+}
+
+h1, h2, h3 {
+	line-height: 1.2
+}
+
+/* Your text should be in a nice narrow column */
+.content-column {
+	max-width: 650px;
+	margin: 40px auto;
+}
+
+/* But your visualization should be full-width and full-height */
+.vis-holder {
+  width: 100%;
+}
+
+.draggable {
+  -webkit-filter: drop-shadow(.5px .5px 2px black);
+  transition: drop-shadow 0.6s ease-in-out;
+}
+
+.draggable:hover {
+  -webkit-filter: drop-shadow(0px 0px 4px white) drop-shadow(.5px .5px .5px black);
+}
+
+.draggable.picked {
+  -webkit-filter: drop-shadow(0px 0px 4px white) drop-shadow(3px 3px 1.5px black);
+}
+
+.penguin {
+  -webkit-filter: drop-shadow(2px 2px 4px black);
+  transition: drop-shadow 0.6s ease-in-out;
+}
+
+.penguin:hover {
+  -webkit-filter: drop-shadow(0px 0px 2px white) drop-shadow(2px 2px 1px black);
+}
+
+.penguin.picked {
+  -webkit-filter: drop-shadow(0px 0px 2px white) drop-shadow(4px 4px 2px black);
+}
+
+/* Fork on GitHub ribbon via https://codepo8.github.io/css-fork-on-github-ribbon/# */  
+#forkongithub a, button{
+	background:#00F;
+	color:#fff;
+	text-decoration:none;
+	font-family:arial,sans-serif;
+	text-align:center;
+	font-weight:bold;
+	padding:5px 40px;
+	font-size:1rem;
+	line-height:1.4rem;
+	position:relative;
+	transition:0.5s;
+}
+#forkongithub a:hover, button:hover{
+	background:#118;
+	color:#fff;
+}
+#forkongithub a::before,#forkongithub a::after, button::before, button::after{
+	content:"";
+	width:100%;
+	display:block;
+	position:absolute;
+	top:1px;
+	left:0;
+	height:1px;
+	background:#fff;
+}
+#forkongithub a::after, button::after{
+	bottom:1px;
+	top:auto;
+}
+@media screen and (min-width:1000px){
+	#forkongithub{
+		position:absolute;
+		display:block;
+		top:0;
+		right:0;
+		width:200px;
+		overflow:hidden;
+		height:200px;
+		z-index:9999;
+	}
+	#forkongithub a{
+		width:200px;
+		position:absolute;
+		top:60px;
+		right:-60px;
+		transform:rotate(45deg);
+		-webkit-transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+		-o-transform:rotate(45deg);
+		box-shadow:4px 4px 10px rgba(0,0,0,0.8);
+	}
+}
