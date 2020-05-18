@@ -231,7 +231,7 @@ function hexboard() {
               .raise()
         }
         
-        return d3.drag()
+        return vc.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
             .on('end', dragended)
